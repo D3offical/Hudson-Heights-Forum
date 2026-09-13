@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Hudson Heights Roleplay community forums." />
+  <title>Hudson Heights Roleplay | Forums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-strip"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Hudson Heights Roleplay home">
+        <div class="brand-mark">HH</div>
+        <div>
+          <span class="brand-name">HUDSON HEIGHTS</span>
+          <span class="brand-sub">ROLEPLAY</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a class="active" href="#home">Home</a>
+        <a href="#forums">Forums</a>
+        <a href="#factions">Factions</a>
+        <a href="#departments">Departments</a>
+        <a href="#support">Support</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-ghost" data-modal="login">Log in</button>
+        <button class="btn btn-primary" data-modal="register">Register</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="eyebrow"><span></span> NEW YORK ROLEPLAY COMMUNITY</div>
+        <h1>WELCOME TO<br><em>HUDSON HEIGHTS</em></h1>
+        <p>Build your story. Join a faction. Serve the city. Make your name.</p>
+        <div class="hero-actions">
+          <a href="#forums" class="btn btn-primary btn-lg">Browse Forums</a>
+          <a href="#" class="btn btn-dark btn-lg" id="discordBtn">Join Discord</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="announcement-bar">
+      <div class="container announcement-inner">
+        <span class="announcement-icon">📢</span>
+        <strong>HUDSON HEIGHTS ANNOUNCEMENT</strong>
+        <span>Faction applications are now open. Groups must have a forum thread, 10+ active members, and showcase quality roleplay.</span>
+        <a href="#factions">View factions →</a>
+      </div>
+    </section>
+
+    <section class="container content-grid" id="forums">
+      <div class="forum-column">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker">COMMUNITY</span>
+            <h2>Hudson Heights Forums</h2>
+          </div>
+          <button class="small-action" id="newPostBtn">+ New Post</button>
+        </div>
+
+        <div class="forum-group">
+          <div class="group-title">SERVER INFORMATION</div>
+
+          <a class="forum-row" href="#" data-forum="Server Information">
+            <div class="forum-icon">ℹ</div>
+            <div class="forum-main">
+              <h3>Server Information</h3>
+              <p>Everything you need to know before entering Hudson Heights.</p>
+              <div class="subforums"><span>Rules & Guidelines</span><span>Getting Started</span></div>
+            </div>
+            <div class="forum-count"><strong>12</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>48</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>A Guide to Serious Roleplay</strong>
+              <span>Today at 4:12 PM · Management</span>
+            </div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="Announcements">
+            <div class="forum-icon">📣</div>
+            <div class="forum-main">
+              <h3>Announcements</h3>
+              <p>Official news, updates, maintenance, and community notices.</p>
+            </div>
+            <div class="forum-count"><strong>8</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>22</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>Hudson Heights Release</strong>
+              <span>Sep 13, 2026 · Management</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="forum-group" id="factions">
+          <div class="group-title">FACTION MANAGEMENT</div>
+
+          <a class="forum-row" href="#" data-forum="Faction Information">
+            <div class="forum-icon">♛</div>
+            <div class="forum-main">
+              <h3>Faction Information</h3>
+              <p>Faction rules, requirements, tiers, and management updates.</p>
+              <div class="subforums"><span>Faction Rules</span><span>Tier System</span></div>
+            </div>
+            <div class="forum-count"><strong>16</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>74</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>Faction Requirements</strong>
+              <span>Today · Faction Management</span>
+            </div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="Faction Applications">
+            <div class="forum-icon">✎</div>
+            <div class="forum-main">
+              <h3>Faction Applications</h3>
+              <p>Apply to have your faction recognized by Hudson Heights.</p>
+              <div class="subforums"><span>Pending</span><span>Accepted</span><span>Denied</span></div>
+            </div>
+            <div class="forum-count"><strong>27</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>103</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>PNV / 6Block</strong>
+              <span>Today · Applicant</span>
+            </div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="Official Factions">
+            <div class="forum-icon">★</div>
+            <div class="forum-main">
+              <h3>Official Factions</h3>
+              <p>Recognized factions, official threads, rosters, lore, and media.</p>
+              <div class="subforums"><span>Tier 1</span><span>Tier 2</span><span>Tier 3</span><span>Archived</span></div>
+            </div>
+            <div class="forum-count"><strong>14</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>391</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>Faction Activity Check</strong>
+              <span>Yesterday · FM Team</span>
+            </div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="Faction Media">
+            <div class="forum-icon">▶</div>
+            <div class="forum-main">
+              <h3>Faction Media & Interactions</h3>
+              <p>Post faction clips, screenshots, events, and positive interactions.</p>
+            </div>
+            <div class="forum-count"><strong>89</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>541</strong><span>Messages</span></div>
+            <div class="latest">
+              <strong>Weekly Interaction Thread</strong>
+              <span>Today · Community</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="forum-group" id="departments">
+          <div class="group-title">CITY DEPARTMENTS</div>
+
+          <a class="forum-row" href="#" data-forum="NYPD">
+            <div class="forum-icon">🛡</div>
+            <div class="forum-main">
+              <h3>New York Police Department</h3>
+              <p>Applications, academy information, SOPs, and department announcements.</p>
+              <div class="subforums"><span>Applications</span><span>Academy</span><span>Internal Affairs</span></div>
+            </div>
+            <div class="forum-count"><strong>31</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>187</strong><span>Messages</span></div>
+            <div class="latest"><strong>NYPD Applications Open</strong><span>Today · Command</span></div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="EMS">
+            <div class="forum-icon">✚</div>
+            <div class="forum-main">
+              <h3>Emergency Medical Services</h3>
+              <p>EMS applications, training, policies, and medical department information.</p>
+            </div>
+            <div class="forum-count"><strong>18</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>95</strong><span>Messages</span></div>
+            <div class="latest"><strong>EMS Recruitment</strong><span>Sep 12 · EMS Command</span></div>
+          </a>
+
+          <a class="forum-row" href="#" data-forum="Businesses">
+            <div class="forum-icon">▦</div>
+            <div class="forum-main">
+              <h3>Businesses</h3>
+              <p>Business applications, ownership, advertisements, and city commerce.</p>
+            </div>
+            <div class="forum-count"><strong>42</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>203</strong><span>Messages</span></div>
+            <div class="latest"><strong>Business Applications</strong><span>Sep 12 · Business Team</span></div>
+          </a>
+        </div>
+
+        <div class="forum-group" id="support">
+          <div class="group-title">COMMUNITY SUPPORT</div>
+          <a class="forum-row" href="#" data-forum="Player Support">
+            <div class="forum-icon">?</div>
+            <div class="forum-main">
+              <h3>Player Support</h3>
+              <p>Get help from the staff team with server or account issues.</p>
+              <div class="subforums"><span>Support Tickets</span><span>Ban Appeals</span><span>Player Reports</span></div>
+            </div>
+            <div class="forum-count"><strong>126</strong><span>Threads</span></div>
+            <div class="forum-count"><strong>302</strong><span>Messages</span></div>
+            <div class="latest"><strong>Support Guidelines</strong><span>Sep 11 · Staff Team</span></div>
+          </a>
+        </div>
+      </div>
+
+      <aside class="sidebar">
+        <div class="side-card server-card">
+          <div class="status-line"><span class="status-dot"></span> SERVER ONLINE</div>
+          <h3>Hudson Heights RP</h3>
+          <p>New York City Serious Roleplay</p>
+          <div class="players"><strong>128</strong><span>/ 200 players</span></div>
+          <div class="progress"><span style="width:64%"></span></div>
+          <button class="btn btn-primary full" id="connectBtn">CONNECT TO SERVER</button>
+        </div>
+
+        <div class="side-card">
+          <div class="side-heading"><h3>Latest Posts</h3><a href="#">View all</a></div>
+          <div class="post-item">
+            <div class="avatar">FM</div>
+            <div><strong>Faction Apps Are Open</strong><span>Faction Management · 8 min ago</span></div>
+          </div>
+          <div class="post-item">
+            <div class="avatar">HH</div>
+            <div><strong>Official Trailer</strong><span>Announcements · 31 min ago</span></div>
+          </div>
+          <div class="post-item">
+            <div class="avatar">PD</div>
+            <div><strong>NYPD Academy Applications</strong><span>NYPD · 1 hr ago</span></div>
+          </div>
+          <div class="post-item">
+            <div class="avatar">6B</div>
+            <div><strong>PNV / 6Block</strong><span>Faction Applications · 2 hrs ago</span></div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="side-heading"><h3>Community Stats</h3></div>
+          <div class="stat-grid">
+            <div><strong>383</strong><span>Threads</span></div>
+            <div><strong>1,966</strong><span>Messages</span></div>
+            <div><strong>2,841</strong><span>Members</span></div>
+            <div><strong>63</strong><span>Online</span></div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="side-heading"><h3>Useful Links</h3></div>
+          <a class="quick-link" href="#" id="discordLink"><span>Discord</span><b>↗</b></a>
+          <a class="quick-link" href="#factions"><span>Faction Applications</span><b>→</b></a>
+          <a class="quick-link" href="#support"><span>Player Support</span><b>→</b></a>
+          <a class="quick-link" href="#"><span>Server Rules</span><b>→</b></a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div class="brand footer-brand">
+        <div class="brand-mark">HH</div>
+        <div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div>
+      </div>
+      <p>© 2026 Hudson Heights Roleplay. All rights reserved.</p>
+      <div class="footer-links"><a href="#">Rules</a><a href="#">Privacy</a><a href="#">Discord</a></div>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
