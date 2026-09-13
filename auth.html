@@ -1,0 +1,13 @@
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase.js" defer></script>
+<script src="app.js" defer></script><title>Account | Hudson Heights</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
+<a class="brand" href="index.html"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></a>
+<button class="mobile-menu" id="mobileMenu">☰</button>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a><a href="admin.html">Staff</a></nav>
+<div class="header-actions" id="authArea"><a class="btn btn-ghost btn-sm" href="auth.html">Log in</a><a class="btn btn-primary btn-sm" href="auth.html#register">Register</a></div>
+</div></header><section class="page-hero"><div class="container"><span class="section-kicker">ACCOUNT</span><h1 id="authTitle">Log in</h1><p>Sign in or create your Hudson Heights forum account.</p></div></section><main class="narrow page-wrap"><form id="authForm" class="auth-card" data-mode="login" onsubmit="handleAuthSubmit(event)"><div class="field" id="usernameField" style="display:none"><label>Username</label><input id="username" maxlength="32"></div><div class="field"><label>Email</label><input id="email" type="email" required></div><div class="field"><label>Password</label><input id="password" type="password" minlength="6" required></div><button id="authSubmit" class="btn btn-primary full">LOG IN</button><div id="authMsg" class="message"></div><p id="switchAuth" style="color:#9298a5;font-size:12px"></p></form></main><footer><div class="container footer-inner"><div class="brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div><p>© 2026 Hudson Heights Roleplay.</p><div class="footer-links"><a href="support.html">Support</a><a href="auth.html">Account</a><a href="admin.html">Staff</a></div></div></footer></body></html>

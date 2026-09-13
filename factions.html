@@ -1,25 +1,13 @@
 <!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"><title>Factions | Hudson Heights</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase.js" defer></script>
+<script src="app.js" defer></script><title>Factions | Hudson Heights</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></a>
 <button class="mobile-menu" id="mobileMenu">☰</button>
-<nav class="main-nav" id="mainNav">
-<a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a>
-</nav>
-<div class="header-actions"><button class="btn btn-ghost" data-modal="login">Log in</button><button class="btn btn-primary" data-modal="register">Register</button></div>
-</div></header>
-<section class="page-hero"><div class="container"><span class="section-kicker">FACTION MANAGEMENT</span><h1>Official Factions</h1><p>Recognized factions, tiers, rosters, activity, and status.</p><a class="btn btn-primary" href="faction-apply.html">Apply For Official Status</a></div></section>
-<main class="container page-wrap"><div class="filter-row"><button class="chip active">All</button><button class="chip">Tier 1</button><button class="chip">Tier 2</button><button class="chip">Tier 3</button><button class="chip">Pending</button><button class="chip">Archived</button></div>
-<div class="faction-grid">
-<article class="faction-card"><div class="faction-banner"><span class="badge official">OFFICIAL</span><span class="badge tier">TIER 2</span></div><div class="faction-body"><div class="faction-logo">6B</div><div><h3>PNV / 6Block</h3><p>Brooklyn</p></div></div><div class="faction-meta"><span>20+ Members</span><span>Active</span><span>Good Standing</span></div><a class="btn btn-dark full" href="faction-profile.html?f=pnv">View Faction</a></article>
-<article class="faction-card"><div class="faction-banner"><span class="badge official">OFFICIAL</span><span class="badge tier">TIER 1</span></div><div class="faction-body"><div class="faction-logo">QB</div><div><h3>Queensbridge</h3><p>Queens</p></div></div><div class="faction-meta"><span>18 Members</span><span>Active</span><span>Good Standing</span></div><a class="btn btn-dark full" href="faction-profile.html?f=queensbridge">View Faction</a></article>
-<article class="faction-card"><div class="faction-banner"><span class="badge pending">PENDING</span></div><div class="faction-body"><div class="faction-logo">HT</div><div><h3>HillTop</h3><p>Manhattan</p></div></div><div class="faction-meta"><span>14 Members</span><span>Under Review</span><span>Pending</span></div><a class="btn btn-dark full" href="faction-profile.html?f=hilltop">View Application</a></article>
-<article class="faction-card"><div class="faction-banner"><span class="badge official">OFFICIAL</span><span class="badge tier">TIER 3</span></div><div class="faction-body"><div class="faction-logo">MT</div><div><h3>MTM / StainGang</h3><p>Queens</p></div></div><div class="faction-meta"><span>22 Members</span><span>Active</span><span>Good Standing</span></div><a class="btn btn-dark full" href="faction-profile.html?f=mtm">View Faction</a></article>
-</div></main><footer><div class="container footer-inner">
-<div class="brand footer-brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div>
-<p>© 2026 Hudson Heights Roleplay. All rights reserved.</p>
-<div class="footer-links"><a href="support.html">Support</a><a href="forums.html">Rules</a><a href="#" id="discordFooter">Discord</a></div>
-</div></footer>
-<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
-<script src="app.js"></script></body></html>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a><a href="admin.html">Staff</a></nav>
+<div class="header-actions" id="authArea"><a class="btn btn-ghost btn-sm" href="auth.html">Log in</a><a class="btn btn-primary btn-sm" href="auth.html#register">Register</a></div>
+</div></header><section class="page-hero"><div class="container"><span class="section-kicker">FACTION MANAGEMENT</span><h1>Official Factions</h1><p>Faction profiles remain visual in V5; applications are database-ready.</p></div></section><main class="container page-wrap"><div class="faction-grid"><article class="faction-card"><div class="faction-banner"><span class="badge official">OFFICIAL</span> <span class="badge tier">TIER 2</span></div><div class="faction-body"><div class="faction-logo">6B</div><div><h3>PNV / 6Block</h3><p>Brooklyn</p></div></div><div class="faction-meta"><span>20+ Members</span><span>Active</span></div></article><article class="faction-card"><div class="faction-banner"><span class="badge pending">PENDING</span></div><div class="faction-body"><div class="faction-logo">HT</div><div><h3>HillTop</h3><p>Manhattan</p></div></div><div class="faction-meta"><span>14 Members</span><span>Under Review</span></div></article></div></main><footer><div class="container footer-inner"><div class="brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div><p>© 2026 Hudson Heights Roleplay.</p><div class="footer-links"><a href="support.html">Support</a><a href="auth.html">Account</a><a href="admin.html">Staff</a></div></div></footer></body></html>

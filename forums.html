@@ -1,28 +1,17 @@
 <!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"><title>Forums | Hudson Heights</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase.js" defer></script>
+<script src="app.js" defer></script><title>Forums | Hudson Heights</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></a>
 <button class="mobile-menu" id="mobileMenu">☰</button>
-<nav class="main-nav" id="mainNav">
-<a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a>
-</nav>
-<div class="header-actions"><button class="btn btn-ghost" data-modal="login">Log in</button><button class="btn btn-primary" data-modal="register">Register</button></div>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a><a href="admin.html">Staff</a></nav>
+<div class="header-actions" id="authArea"><a class="btn btn-ghost btn-sm" href="auth.html">Log in</a><a class="btn btn-primary btn-sm" href="auth.html#register">Register</a></div>
 </div></header>
-<section class="page-hero"><div class="container"><span class="section-kicker">COMMUNITY</span><h1>Forums</h1><p>Announcements, roleplay discussions, applications, department information, and community support.</p></div></section>
-<main class="container page-wrap"><div class="toolbar"><input class="search-input" placeholder="Search forums..."><button class="btn btn-primary" id="newPostBtn">+ New Thread</button></div>
-<div class="forum-group" id="server"><div class="group-title">SERVER INFORMATION</div>
-<a class="forum-row" href="threads.html"><div class="forum-icon">📣</div><div class="forum-main"><h3>Announcements</h3><p>Official server news, updates, maintenance, and community notices.</p></div><div class="forum-count"><strong>8</strong><span>Threads</span></div><div class="forum-count"><strong>22</strong><span>Messages</span></div><div class="latest"><strong>Hudson Heights Release</strong><span>Today · Management</span></div></a>
-<a class="forum-row" href="threads.html"><div class="forum-icon">ℹ</div><div class="forum-main"><h3>Server Information</h3><p>Rules, guides, whitelist information, and getting started.</p></div><div class="forum-count"><strong>12</strong><span>Threads</span></div><div class="forum-count"><strong>48</strong><span>Messages</span></div><div class="latest"><strong>How to Join</strong><span>Today · Staff</span></div></a></div>
-<div class="forum-group"><div class="group-title">ROLEPLAY</div>
-<a class="forum-row" href="factions.html"><div class="forum-icon">★</div><div class="forum-main"><h3>Factions</h3><p>Official factions, applications, faction media, and management.</p></div><div class="forum-count"><strong>146</strong><span>Threads</span></div><div class="forum-count"><strong>912</strong><span>Messages</span></div><div class="latest"><strong>Faction Tier Update</strong><span>Today · FM Team</span></div></a>
-<a class="forum-row" href="departments.html"><div class="forum-icon">🛡</div><div class="forum-main"><h3>Departments</h3><p>NYPD, EMS, DOJ, and business information.</p></div><div class="forum-count"><strong>91</strong><span>Threads</span></div><div class="forum-count"><strong>485</strong><span>Messages</span></div><div class="latest"><strong>NYPD Hiring</strong><span>Today · Command</span></div></a></div>
-<div class="forum-group"><div class="group-title">COMMUNITY</div>
-<a class="forum-row" href="support.html"><div class="forum-icon">?</div><div class="forum-main"><h3>Community Support</h3><p>Player reports, ban appeals, suggestions, and support tickets.</p></div><div class="forum-count"><strong>126</strong><span>Threads</span></div><div class="forum-count"><strong>302</strong><span>Messages</span></div><div class="latest"><strong>Support Guidelines</strong><span>Yesterday · Staff</span></div></a></div>
-</main><footer><div class="container footer-inner">
-<div class="brand footer-brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div>
-<p>© 2026 Hudson Heights Roleplay. All rights reserved.</p>
-<div class="footer-links"><a href="support.html">Support</a><a href="forums.html">Rules</a><a href="#" id="discordFooter">Discord</a></div>
-</div></footer>
-<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
-<script src="app.js"></script></body></html>
+<section class="page-hero"><div class="container"><span class="section-kicker">COMMUNITY</span><h1>Forums</h1><p>Live threads load from Supabase after setup.</p></div></section>
+<main class="container page-wrap"><div class="toolbar"><input class="search-input" placeholder="Search forums..."><a class="btn btn-primary" href="create-thread.html">+ New Thread</a></div>
+<div class="forum-group"><div class="group-title">COMMUNITY</div><a class="forum-row" href="threads.html"><div class="forum-icon">💬</div><div class="forum-main"><h3>General Discussions</h3><p>Live threads, questions, and community conversations.</p></div><div class="forum-count"><strong>Live</strong><span>Threads</span></div><div class="forum-count"><strong>Live</strong><span>Replies</span></div><div class="latest"><strong>Database-backed</strong><span>Supabase</span></div></a></div>
+</main><footer><div class="container footer-inner"><div class="brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div><p>© 2026 Hudson Heights Roleplay.</p><div class="footer-links"><a href="support.html">Support</a><a href="auth.html">Account</a><a href="admin.html">Staff</a></div></div></footer></body></html>

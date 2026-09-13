@@ -1,54 +1,19 @@
 <!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css"><title>Hudson Heights Roleplay</title></head><body>
-<div class="top-strip"></div><header class="site-header"><div class="container header-inner">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
+<script src="supabase.js" defer></script>
+<script src="app.js" defer></script><title>Hudson Heights Roleplay</title></head><body><div class="top-strip"></div><header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></a>
 <button class="mobile-menu" id="mobileMenu">☰</button>
-<nav class="main-nav" id="mainNav">
-<a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a>
-</nav>
-<div class="header-actions"><button class="btn btn-ghost" data-modal="login">Log in</button><button class="btn btn-primary" data-modal="register">Register</button></div>
+<nav class="main-nav" id="mainNav"><a href="index.html">Home</a><a href="forums.html">Forums</a><a href="factions.html">Factions</a><a href="departments.html">Departments</a><a href="support.html">Support</a><a href="admin.html">Staff</a></nav>
+<div class="header-actions" id="authArea"><a class="btn btn-ghost btn-sm" href="auth.html">Log in</a><a class="btn btn-primary btn-sm" href="auth.html#register">Register</a></div>
 </div></header>
-<section class="hero"><div class="skyline">
-<svg viewBox="0 0 1600 500" preserveAspectRatio="none" aria-hidden="true">
-  <path fill="#050608" d="M0,500 L0,365 L40,365 L40,330 L90,330 L90,370 L130,370 L130,300 L180,300 L180,350 L235,350 L235,260 L280,260 L280,365 L330,365 L330,315 L380,315 L380,210 L430,210 L430,345 L480,345 L480,285 L525,285 L525,360 L580,360 L580,225 L625,225 L625,335 L675,335 L675,180 L720,180 L720,355 L775,355 L775,275 L820,275 L820,335 L875,335 L875,245 L925,245 L925,365 L980,365 L980,300 L1035,300 L1035,210 L1085,210 L1085,350 L1140,350 L1140,280 L1190,280 L1190,360 L1240,360 L1240,230 L1290,230 L1290,345 L1340,345 L1340,290 L1390,290 L1390,365 L1440,365 L1440,260 L1490,260 L1490,340 L1540,340 L1540,300 L1600,300 L1600,500 Z"/>
-  <rect x="785" y="95" width="18" height="240" fill="#050608"/>
-  <polygon points="794,35 780,95 808,95" fill="#050608"/>
-</svg>
-<div class="bridge"></div></div><div class="container hero-grid">
-<div><div class="eyebrow"><span></span> NEW YORK ROLEPLAY COMMUNITY</div><h1>WELCOME TO<br><em>HUDSON HEIGHTS</em></h1>
-<p>Build your story. Join a faction. Serve the city. Make your name.</p>
-<div class="hero-actions"><a class="btn btn-primary btn-lg" href="forums.html">Browse Forums</a><a class="btn btn-dark btn-lg" href="#" id="discordBtn">Join Discord</a></div></div>
-<div class="hero-card"><div class="status-line"><span class="status-dot"></span> LIVE COMMUNITY</div>
-<div class="hero-stat"><span>Players Online</span><strong>128 / 200</strong></div>
-<div class="hero-stat"><span>Forum Members</span><strong>2,841</strong></div>
-<div class="hero-stat"><span>Official Factions</span><strong>14</strong></div>
-<div class="hero-stat"><span>Latest Update</span><strong>Today</strong></div></div>
-</div></section>
-<section class="announcement-bar"><div class="container announcement-inner"><span>📢</span><strong>HUDSON HEIGHTS ANNOUNCEMENT</strong><span class="grow">Faction applications are open. Groups need 10+ active members, a forum thread, and quality roleplay.</span><a href="faction-apply.html">Apply now →</a></div></section>
-<main class="container home-grid"><section>
-<div class="section-heading"><div><span class="section-kicker">COMMUNITY</span><h2>Hudson Heights Forums</h2></div><a class="small-action" href="forums.html">View All</a></div>
-<div class="forum-group"><div class="group-title">SERVER INFORMATION</div>
-<a class="forum-row" href="threads.html"><div class="forum-icon">ℹ</div><div class="forum-main"><h3>Server Information</h3><p>Rules, guides, getting started, and official announcements.</p><div class="subforums"><span>Rules</span><span>Getting Started</span><span>Announcements</span></div></div><div class="forum-count"><strong>20</strong><span>Threads</span></div><div class="forum-count"><strong>70</strong><span>Messages</span></div><div class="latest"><strong>Server Rules Updated</strong><span>Today · Management</span></div></a></div>
-<div class="forum-group"><div class="group-title">FACTION MANAGEMENT</div>
-<a class="forum-row" href="factions.html"><div class="forum-icon">★</div><div class="forum-main"><h3>Official Factions</h3><p>Recognized groups, tiers, rosters, activity, and media.</p></div><div class="forum-count"><strong>14</strong><span>Factions</span></div><div class="forum-count"><strong>391</strong><span>Messages</span></div><div class="latest"><strong>Faction Activity Check</strong><span>Today · FM Team</span></div></a>
-<a class="forum-row" href="faction-apply.html"><div class="forum-icon">✎</div><div class="forum-main"><h3>Faction Applications</h3><p>Apply for official faction recognition.</p></div><div class="forum-count"><strong>27</strong><span>Apps</span></div><div class="forum-count"><strong>103</strong><span>Replies</span></div><div class="latest"><strong>Applications Open</strong><span>Today · FM Team</span></div></a></div>
-<div class="forum-group"><div class="group-title">CITY DEPARTMENTS</div>
-<a class="forum-row" href="departments.html"><div class="forum-icon">🛡</div><div class="forum-main"><h3>NYPD / EMS / DOJ / Businesses</h3><p>Applications, SOPs, recruitment, and city services.</p></div><div class="forum-count"><strong>91</strong><span>Threads</span></div><div class="forum-count"><strong>485</strong><span>Messages</span></div><div class="latest"><strong>NYPD Applications Open</strong><span>Today · Command</span></div></a></div>
-</section>
-<aside class="sidebar">
-<div class="side-card server-card"><div class="status-line"><span class="status-dot"></span> SERVER ONLINE</div><h3>Hudson Heights RP</h3><p>New York City Serious Roleplay</p><div class="players"><strong>128</strong><span>/ 200 players</span></div><div class="progress"><span style="width:64%"></span></div><button class="btn btn-primary full" id="connectBtn">CONNECT TO SERVER</button></div>
-<div class="side-card"><div class="side-heading"><h3>Latest Posts</h3><a href="threads.html">View all</a></div>
-<div class="post-mini"><div class="avatar">HH</div><div><strong>Hudson Heights Release</strong><span>Announcements · 8 min ago</span></div></div>
-<div class="post-mini"><div class="avatar">FM</div><div><strong>Faction Apps Are Open</strong><span>Faction Management · 31 min ago</span></div></div>
-<div class="post-mini"><div class="avatar">PD</div><div><strong>NYPD Hiring Process</strong><span>NYPD · 1 hr ago</span></div></div></div>
-<div class="side-card"><div class="side-heading"><h3>Quick Links</h3></div><a class="quick-link" href="faction-apply.html"><span>Faction Application</span><b>→</b></a><a class="quick-link" href="departments.html"><span>Departments</span><b>→</b></a><a class="quick-link" href="support.html"><span>Player Support</span><b>→</b></a><a class="quick-link" href="#" id="discordQuick"><span>Discord</span><b>↗</b></a></div>
-<div class="side-card"><div class="side-heading"><h3>Community Stats</h3></div><div class="stat-grid"><div><strong>383</strong><span>Threads</span></div><div><strong>1,966</strong><span>Messages</span></div><div><strong>2,841</strong><span>Members</span></div><div><strong>63</strong><span>Online</span></div></div></div>
-</aside></main><footer><div class="container footer-inner">
-<div class="brand footer-brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div>
-<p>© 2026 Hudson Heights Roleplay. All rights reserved.</p>
-<div class="footer-links"><a href="support.html">Support</a><a href="forums.html">Rules</a><a href="#" id="discordFooter">Discord</a></div>
-</div></footer>
-<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
-<script src="app.js"></script></body></html>
+<section class="hero"><div class="container hero-grid"><div><div class="eyebrow"><span></span> NEW YORK ROLEPLAY COMMUNITY</div><h1>WELCOME TO<br><em>HUDSON HEIGHTS</em></h1><p>Build your story. Join a faction. Serve the city. Make your name.</p><div class="hero-actions"><a class="btn btn-primary btn-lg" href="forums.html">Browse Forums</a><a class="btn btn-dark btn-lg" href="auth.html#register">Create Account</a></div></div><div class="hero-card"><div class="hero-stat"><span>Forum Backend</span><strong>Supabase Ready</strong></div><div class="hero-stat"><span>Accounts</span><strong>Enabled after setup</strong></div><div class="hero-stat"><span>Threads & Replies</span><strong>Database Ready</strong></div><div class="hero-stat"><span>Faction Apps</span><strong>Staff Review</strong></div></div></div></section>
+<section class="announcement-bar"><div class="container announcement-inner"><span>📢</span><strong>HUDSON HEIGHTS V5</strong><span class="grow">V5 adds Supabase-ready accounts, threads, replies, and faction applications.</span><a href="SETUP.md">Setup guide →</a></div></section>
+<main class="container home-grid"><section><div class="section-heading"><div><span class="section-kicker">COMMUNITY</span><h2>Hudson Heights Forums</h2></div><a class="small-action" href="forums.html">View All</a></div>
+<div class="forum-group"><div class="group-title">SERVER INFORMATION</div><a class="forum-row" href="threads.html"><div class="forum-icon">ℹ</div><div class="forum-main"><h3>Announcements & Information</h3><p>Server rules, guides, news, and community updates.</p></div><div class="forum-count"><strong>Live</strong><span>Database</span></div><div class="forum-count"><strong>RLS</strong><span>Secured</span></div><div class="latest"><strong>Supabase-ready</strong><span>V5</span></div></a></div>
+<div class="forum-group"><div class="group-title">FACTION MANAGEMENT</div><a class="forum-row" href="factions.html"><div class="forum-icon">★</div><div class="forum-main"><h3>Official Factions</h3><p>Faction profiles, tiers, rosters, and applications.</p></div><div class="forum-count"><strong>Apps</strong><span>Saved</span></div><div class="forum-count"><strong>Staff</strong><span>Review</span></div><div class="latest"><strong>Admin panel ready</strong><span>V5</span></div></a></div></section>
+<aside class="sidebar"><div class="side-card"><div class="status-line"><span class="status-dot"></span> V5 BACKEND</div><h3>Supabase Integration</h3><p style="color:#9298a5">Add your project URL and anon key to activate real accounts and data.</p><a class="btn btn-primary full" href="SETUP.md">OPEN SETUP GUIDE</a></div><div class="side-card"><h3>Quick Links</h3><a class="quick-link" href="auth.html"><span>Log in / Register</span><b>→</b></a><a class="quick-link" href="create-thread.html"><span>Create Thread</span><b>→</b></a><a class="quick-link" href="faction-apply.html"><span>Faction Application</span><b>→</b></a><a class="quick-link" href="admin.html"><span>Staff Panel</span><b>→</b></a></div></aside></main><footer><div class="container footer-inner"><div class="brand"><div class="brand-mark">HH</div><div><span class="brand-name">HUDSON HEIGHTS</span><span class="brand-sub">ROLEPLAY</span></div></div><p>© 2026 Hudson Heights Roleplay.</p><div class="footer-links"><a href="support.html">Support</a><a href="auth.html">Account</a><a href="admin.html">Staff</a></div></div></footer></body></html>
