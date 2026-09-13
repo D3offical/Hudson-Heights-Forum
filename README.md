@@ -1,19 +1,20 @@
-# Hudson Heights Roleplay Forum V3
+# Hudson Heights Roleplay Forum V4
 
-## What's new in V3
-- Improved NYC-style skyline hero
-- Fixed Community Stats spacing
-- Realistic thread-list page
-- Faction profile pages with tier, status, roster, turf, strikes and warnings
-- Improved faction cards
-- Improved faction application form
-- Better responsive/mobile styling
-- Separate pages for Forums, Threads, Factions, Faction Profiles, Departments and Support
+## V4 upgrades
+- Stronger NYC skyline / city hero treatment
+- More realistic XenForo-style forum presentation
+- New `thread.html` page with full posts, user cards, reactions, and quick reply
+- Improved `threads.html`
+- Improved faction profiles with roster table and faction media section
+- Improved sidebar with latest posts
+- Cleaner mobile styling
+- Existing pages retained and upgraded
 
 ## Files
 - index.html
 - forums.html
 - threads.html
+- thread.html
 - factions.html
 - faction-profile.html
 - faction-apply.html
@@ -22,15 +23,18 @@
 - styles.css
 - app.js
 
-## Upload to your current GitHub repository
+## Install
 1. Extract this ZIP.
-2. In your existing Hudson-Heights-Forum repository, click Add file -> Upload files.
-3. Upload every file from this ZIP.
-4. Commit directly to `main`.
-5. GitHub Pages will automatically rebuild.
+2. Open your existing GitHub `Hudson-Heights-Forum` repository.
+3. Click **Add file -> Upload files**.
+4. Upload every file from this ZIP.
+5. Commit directly to `main`.
+6. GitHub Pages will rebuild automatically.
 
 ## Important
-This is still a frontend-only forum. For real login, profiles, posts, replies and saved applications, connect a backend such as Supabase.
+V4 is still frontend-only. Login, posting, replies, and application saving need a backend such as Supabase.
 
 ## Discord and FiveM
-Edit `app.js` and replace the placeholder alert behavior with your real Discord invite and FiveM `cfx.re/join/...` URL.
+Edit `app.js` and replace the placeholder alerts with:
+- your Discord invite URL
+- your FiveM `https://cfx.re/join/...` URL
